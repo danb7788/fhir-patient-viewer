@@ -4,7 +4,7 @@ FHIR Patient Viewer is a minimalistic, interactive, unopinionated, unfiltered re
 tool for displaying raw FHIR patient data and their relationships in an intuitive,
 visually-pleasant way.
 
-Content expressiveness and interactivity helps professionals in the healthcare 
+Content expressiveness and interactivity help professionals in the healthcare 
 industry understand the FHIR specification better:
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6784845/
@@ -14,8 +14,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6784845/
 https://danb7788.github.io/fhir-patient-viewer-demo/
 
 ## Quickstart
-Add the following to your HTML. The div that renders the viewer can be anywhere you want, as long 
-as the scripts go after.
+Add the following to your HTML:
 ```html
 <!-- Include stylesheet -->
 <link href="https://combinatronics.com/danb7788/fhir-patient-viewer/master/dist/css/fhir-patient-viewer.css" rel="stylesheet" />
