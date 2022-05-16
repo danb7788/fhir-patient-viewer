@@ -22,7 +22,7 @@ Add the following to your HTML:
 <!-- Include the div that will render the visualizer -->
 <div id="fhir-visualizer"></div>
 
-<!-- Add your FHIR endpoint URL and the patient ID to the intersystemsUrl global object -->
+<!-- Add your FHIR Patient endpoint URL and the patient ID to the window object -->
 <script>
     window.intersystemsUrl = 'http://52773-1-a9762ab6.labs.learning.intersystems.com/csp/healthshare/fhirserver/fhir/r4/';
     window.intersystemsPatientId = 1;
