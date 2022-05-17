@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import VueLodash from 'vue-lodash'
+import lodash from 'lodash'
 import { BootstrapVue } from 'bootstrap-vue'
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -17,6 +19,7 @@ moment.extend(timezone);
 Vue.config.productionTip = false
 
 Vue.use(VueAxios, axios)
+Vue.use(VueLodash, { name: 'custom' , lodash: lodash })
 Vue.use(BootstrapVue)
 Vue.use(moment)
 

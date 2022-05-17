@@ -1,8 +1,8 @@
 # FHIR Patient Viewer
 
 FHIR Patient Viewer is a minimalistic, interactive, unopinionated, unfiltered rendering 
-tool for displaying raw FHIR patient data and their relationships in an intuitive,
-visually-pleasant way.
+tool for displaying raw FHIR patient data fetched from an InterSystems IRIS for Health FHIR endpoint
+in an intuitive, visually-pleasant way.
 
 Content expressiveness and interactivity help professionals in the healthcare 
 industry understand the FHIR specification better:
@@ -13,16 +13,24 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6784845/
 
 https://danb7788.github.io/fhir-patient-viewer-demo/
 
+## IRIS sandbox FHIR server setup and seeding
+
+Follow the following instructions to create a sandbox IRIS container and set up
+a FHIR endpoint that returns sample patient data:
+
+https://gettingstartedhealth.intersystems.com/standards-quickstarts/fhir-quickstart/
+
 ## Quickstart
-Add the following to your HTML:
+In your frontend, add the following to your HTML:
 ```html
-<!-- Include stylesheet -->
+<!-- Include stylesheets -->
 <link href="https://combinatronics.com/danb7788/fhir-patient-viewer/master/dist/css/fhir-patient-viewer.css" rel="stylesheet" />
+<link href="https://combinatronics.com/danb7788/fhir-patient-viewer/master/dist/css/fhir-patient-viewer-dependencies.css" rel="stylesheet" />
 
 <!-- Include the div that will render the visualizer -->
 <div id="fhir-visualizer"></div>
 
-<!-- Add your FHIR Patient endpoint URL and the patient ID to the window object -->
+<!-- Add your IRIS FHIR endpoint URL and the patient ID to the window object -->
 <script>
     window.intersystemsUrl = 'http://52773-1-a9762ab6.labs.learning.intersystems.com/csp/healthshare/fhirserver/fhir/r4/';
     window.intersystemsPatientId = 1;
@@ -42,15 +50,25 @@ Then test it in your localhost:
 ```
 npm run serve
 ```
-Modify it as you wish, and then build the distribution files:
+Modify it as you wish, and then either include it in your project or build your own distribution files by running:
 ```
 npm run build
 ```
-## Launch your own InterSystems FHIR demo server
 
-https://gettingstartedhealth.intersystems.com/standards-quickstarts/fhir-quickstart/
+## Use cases
 
-## Run the InterSystems IRIS container in your own machine
+FHIR Patient Viewer can be used as:
 
-https://hub.docker.com/_/intersystems-iris-for-health/plans/80ae1325-d535-484e-8307-b643c2865dd8?tab=instructions
+* A stand alone front-end EHR viewer connected to an IRIS FHIR server.
 
+* A visualization tool within an EMR/EHR system for data-driven end users.
+
+* A visualization tool within an analytics application that interacts with an IRIS FHIR server.
+
+* A debugging tool when developing applications that interact with an IRIS FHIR server.
+
+* An educational tool for understanding FHIR resources and their relationships.
+
+## License
+
+MIT License (MIT)
