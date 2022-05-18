@@ -24,8 +24,8 @@ https://gettingstartedhealth.intersystems.com/standards-quickstarts/fhir-quickst
 In your frontend, add the following to your HTML:
 ```html
 <!-- Include stylesheets -->
-<link href="https://combinatronics.com/danb7788/fhir-patient-viewer/master/dist/css/fhir-patient-viewer.css" rel="stylesheet" />
 <link href="https://combinatronics.com/danb7788/fhir-patient-viewer/master/dist/css/fhir-patient-viewer-dependencies.css" rel="stylesheet" />
+<link href="https://combinatronics.com/danb7788/fhir-patient-viewer/master/dist/css/fhir-patient-viewer.css" rel="stylesheet" />
 
 <!-- Include the div that will render the visualizer -->
 <div id="fhir-visualizer"></div>
@@ -36,7 +36,7 @@ In your frontend, add the following to your HTML:
     window.intersystemsPatientId = 1;
 </script>
 
-<!-- Include the bundled dependencies and the visualizer library (in that order) -->
+<!-- Include the libraries -->
 <script src="https://combinatronics.com/danb7788/fhir-patient-viewer/master/dist/js/fhir-patient-viewer-dependencies.js"></script>
 <script src="https://combinatronics.com/danb7788/fhir-patient-viewer/master/dist/js/fhir-patient-viewer.js"></script>
 ```
