@@ -1,5 +1,7 @@
 # FHIR Patient Viewer
 
+![Alt Text](https://media.giphy.com/media/UXO1VWyK7ZeD72NwVg/giphy.gif)
+
 FHIR Patient Viewer is a minimalistic, interactive, unopinionated, unfiltered rendering 
 tool for displaying raw FHIR patient data fetched from an InterSystems IRIS for Health FHIR endpoint
 in an intuitive, visually-pleasant way.
@@ -9,9 +11,9 @@ industry understand the FHIR specification better:
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6784845/
 
-## Demo
+## Demo (video)
 
-https://danb7788.github.io/fhir-patient-viewer-demo/
+https://youtu.be/TgeLokoTH5c
 
 ## IRIS sandbox FHIR server setup and seeding
 
@@ -41,7 +43,7 @@ In your frontend, add the following to your HTML:
 <script src="https://combinatronics.com/danb7788/fhir-patient-viewer/master/dist/js/fhir-patient-viewer.js"></script>
 ```
 
-## Built if yourself
+## Build your own dist files
 To build your own CSS and JS files from source, clone the repo and install all the dependencies:
 ```
 npm install
@@ -50,7 +52,7 @@ Then test it in your localhost:
 ```
 npm run serve
 ```
-Modify it as you wish, and then either include it in your project or build your own distribution files by running:
+Modify the source code as you wish, and then generate your own distribution files by running:
 ```
 npm run build
 ```
