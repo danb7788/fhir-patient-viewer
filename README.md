@@ -11,9 +11,11 @@ industry understand the FHIR specification better:
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6784845/
 
-## Demo (video)
+## Demo
 
-https://youtu.be/TgeLokoTH5c
+Live demo: https://danb7788.github.io/fhir-patient-viewer-demo
+
+Video demo: https://youtu.be/TgeLokoTH5c
 
 ## IRIS sandbox FHIR server setup and seeding
 
