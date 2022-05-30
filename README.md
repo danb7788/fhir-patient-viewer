@@ -47,7 +47,7 @@ In your frontend, add the following to your HTML:
 
 ## Using FHIR Patient Viewer in a production environment
 Here's a 45-min video in which I show how I'd use FHIR Patient Viewer in production. 
-In it, I'm setting up a managed FHIR server in the InterSystems Cloud Service Portal.
+In it, I'm setting up a managed FHIR server in the InterSystems Cloud Services Portal.
 Then, I'm creating an intermediary backend that talks to the FHIR server and handles
 API authentication. Finally, I'm including in the frontend the FHIR Patient Viewer code
 shown in the Quickstart section, and putting everything in an AWS EC2 Linux server.
