@@ -52,7 +52,7 @@ Then, I'm creating an intermediary backend that talks to the FHIR server and han
 API authentication. Finally, I'm including in the frontend the FHIR Patient Viewer code
 shown in the Quickstart section, and putting everything in an AWS EC2 Linux server.
 
-https://www.youtube.com/watch?v=pj9yb996L-M
+https://youtu.be/pj9yb996L-M
 
 ## Build your own dist files
 To build your own CSS and JS files from source, clone the repo and install all the dependencies:
